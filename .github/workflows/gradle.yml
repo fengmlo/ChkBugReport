@@ -24,7 +24,7 @@ jobs:
     - name: Build core and unit test with gradle
       run: cd core && ./gradlew ${{ inputs.gradle_command }}
     - name: Upload artifacts
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: ChkBugReport
         path: core/build/distributions/ChkBugReport.tar
